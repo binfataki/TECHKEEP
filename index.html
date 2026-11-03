@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script>document.documentElement.classList.add('js');</script>
+
+  <title>TECHKEEP — Technologies, sécurité, logistique, commerce et conseil</title>
+  <meta name="description" content="TECHKEEP accompagne particuliers, entreprises et organisations : sécurité électronique, télécommunications, informatique, marketing et communication, transport et logistique, commerce, import-export, BTP, conseil, formation et services linguistiques.">
+  <meta name="theme-color" content="#04142d">
+  <meta name="robots" content="index, follow">
+
+  <!-- Open Graph / Twitter : remplacer les chemins par des URL absolues une fois le domaine connu (voir README) -->
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="fr_FR">
+  <meta property="og:site_name" content="TECHKEEP">
+  <meta property="og:title" content="TECHKEEP — Connecter, sécuriser et développer vos activités">
+  <meta property="og:description" content="Des solutions technologiques, logistiques, commerciales et stratégiques pour les particuliers, entreprises et organisations.">
+  <meta property="og:image" content="assets/img/og-cover.jpg">
+  <meta property="og:image:alt" content="Logo TECHKEEP">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <link rel="icon" type="image/png" sizes="64x64" href="assets/logo/favicon-64.png">
+  <link rel="apple-touch-icon" href="assets/logo/apple-touch-icon.png">
+  <link rel="preload" href="assets/fonts/source-serif-4-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="assets/fonts/instrument-sans-latin-wght-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="css/style.css">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "TECHKEEP",
+    "alternateName": "Techkeeper Solution",
+    "description": "Entreprise multisectorielle : technologies, télécommunications, réseaux et sécurité ; marketing, branding, communication et événementiel ; transports, logistique et supply chain ; commerce général, import-export et BTP ; conseil, formation et services linguistiques.",
+    "logo": "assets/logo/techkeep-logo.webp",
+    "knowsAbout": ["Sécurité électronique", "Télécommunications", "Logistique", "Import-export", "Communication", "Formation"]
+  }
+  </script>
+</head>
+
+<body>
+<svg xmlns="http://www.w3.org/2000/svg" style="position:absolute;width:0;height:0;overflow:hidden" aria-hidden="true" focusable="false"><symbol id="i-cctv" viewBox="0 0 24 24"><path d="M16.75 12h3.632a1 1 0 0 1 .894 1.447l-2.034 4.069a1 1 0 0 1-1.708.134l-2.124-2.97" /> <path d="M17.106 9.053a1 1 0 0 1 .447 1.341l-3.106 6.211a1 1 0 0 1-1.342.447L3.61 12.3a2.92 2.92 0 0 1-1.3-3.91L3.69 5.6a2.92 2.92 0 0 1 3.92-1.3z" /> <path d="M2 19h3.76a2 2 0 0 0 1.8-1.1L9 15" /> <path d="M2 21v-4" /> <path d="M7 9h.01" /></symbol><symbol id="i-megaphone" viewBox="0 0 24 24"><path d="M11 6a13 13 0 0 0 8.4-2.8A1 1 0 0 1 21 4v12a1 1 0 0 1-1.6.8A13 13 0 0 0 11 14H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2z" /> <path d="M6 14a12 12 0 0 0 2.4 7.2 2 2 0 0 0 3.2-2.4A8 8 0 0 1 10 14" /> <path d="M8 6v8" /></symbol><symbol id="i-truck" viewBox="0 0 24 24"><path d="M14 18V6a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2v11a1 1 0 0 0 1 1h2" /> <path d="M15 18H9" /> <path d="M19 18h2a1 1 0 0 0 1-1v-3.65a1 1 0 0 0-.22-.624l-3.48-4.35A1 1 0 0 0 17.52 8H14" /> <circle cx="17" cy="18" r="2" /> <circle cx="7" cy="18" r="2" /></symbol><symbol id="i-store" viewBox="0 0 24 24"><path d="M15 21v-5a1 1 0 0 0-1-1h-4a1 1 0 0 0-1 1v5" /> <path d="M17.774 10.31a1.12 1.12 0 0 0-1.549 0 2.5 2.5 0 0 1-3.451 0 1.12 1.12 0 0 0-1.548 0 2.5 2.5 0 0 1-3.452 0 1.12 1.12 0 0 0-1.549 0 2.5 2.5 0 0 1-3.77-3.248l2.889-4.184A2 2 0 0 1 7 2h10a2 2 0 0 1 1.653.873l2.895 4.192a2.5 2.5 0 0 1-3.774 3.244" /> <path d="M4 10.95V19a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-8.05" /></symbol><symbol id="i-graduation-cap" viewBox="0 0 24 24"><path d="M21.42 10.922a1 1 0 0 0-.019-1.838L12.83 5.18a2 2 0 0 0-1.66 0L2.6 9.08a1 1 0 0 0 0 1.832l8.57 3.908a2 2 0 0 0 1.66 0z" /> <path d="M22 10v6" /> <path d="M6 12.5V16a6 3 0 0 0 12 0v-3.5" /></symbol><symbol id="i-radio-tower" viewBox="0 0 24 24"><path d="M4.9 16.1C1 12.2 1 5.8 4.9 1.9" /> <path d="M7.8 4.7a6.14 6.14 0 0 0-.8 7.5" /> <circle cx="12" cy="9" r="2" /> <path d="M16.2 4.8c2 2 2.26 5.11.8 7.47" /> <path d="M19.1 1.9a9.96 9.96 0 0 1 0 14.1" /> <path d="M9.5 18h5" /> <path d="m8 22 4-11 4 11" /></symbol><symbol id="i-menu" viewBox="0 0 24 24"><path d="M4 5h16" /> <path d="M4 12h16" /> <path d="M4 19h16" /></symbol><symbol id="i-x" viewBox="0 0 24 24"><path d="M18 6 6 18" /> <path d="m6 6 12 12" /></symbol><symbol id="i-arrow-right" viewBox="0 0 24 24"><path d="M5 12h14" /> <path d="m12 5 7 7-7 7" /></symbol><symbol id="i-arrow-up-right" viewBox="0 0 24 24"><path d="M7 7h10v10" /> <path d="M7 17 17 7" /></symbol><symbol id="i-mail" viewBox="0 0 24 24"><path d="m22 7-8.991 5.727a2 2 0 0 1-2.009 0L2 7" /> <rect x="2" y="4" width="20" height="16" rx="2" /></symbol><symbol id="i-phone" viewBox="0 0 24 24"><path d="M13.832 16.568a1 1 0 0 0 1.213-.303l.355-.465A2 2 0 0 1 17 15h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2A18 18 0 0 1 2 4a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-.8 1.6l-.468.351a1 1 0 0 0-.292 1.233 14 14 0 0 0 6.392 6.384" /></symbol><symbol id="i-map-pin" viewBox="0 0 24 24"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0" /> <circle cx="12" cy="10" r="3" /></symbol><symbol id="i-message-circle" viewBox="0 0 24 24"><path d="M2.992 16.342a2 2 0 0 1 .094 1.167l-1.065 3.29a1 1 0 0 0 1.236 1.168l3.413-.998a2 2 0 0 1 1.099.092 10 10 0 1 0-4.777-4.719" /></symbol><symbol id="i-check" viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5" /></symbol><symbol id="i-send" viewBox="0 0 24 24"><path d="M14.536 21.686a.5.5 0 0 0 .937-.024l6.5-19a.496.496 0 0 0-.635-.635l-19 6.5a.5.5 0 0 0-.024.937l7.93 3.18a2 2 0 0 1 1.112 1.11z" /> <path d="m21.854 2.147-10.94 10.939" /></symbol><symbol id="i-plus" viewBox="0 0 24 24"><path d="M5 12h14" /> <path d="M12 5v14" /></symbol><symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10" /> <path d="M12 6v6l4 2" /></symbol><symbol id="i-alert-triangle" viewBox="0 0 24 24"><path d="m21.73 18-8-14a2 2 0 0 0-3.48 0l-8 14A2 2 0 0 0 4 21h16a2 2 0 0 0 1.73-3" /> <path d="M12 9v4" /> <path d="M12 17h.01" /></symbol><symbol id="i-triangle-alert" viewBox="0 0 24 24"><path d="m21.73 18-8-14a2 2 0 0 0-3.48 0l-8 14A2 2 0 0 0 4 21h16a2 2 0 0 0 1.73-3" /> <path d="M12 9v4" /> <path d="M12 17h.01" /></symbol><symbol id="i-circle-check" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10" /> <path d="m16 9-5.5 5.5L8 12" /></symbol><symbol id="i-circle-alert" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10" /> <line x1="12" x2="12" y1="8" y2="12" /> <line x1="12" x2="12.01" y1="16" y2="16" /></symbol><symbol id="i-chevron-down" viewBox="0 0 24 24"><path d="m6 9 6 6 6-6" /></symbol></svg>
+<a class="skip-link" href="#contenu">Aller au contenu</a>
+
+<!-- ============================ EN-TÊTE ============================ -->
+<header class="site-header" id="top">
+  <div class="container header-inner">
+    <a class="brand" href="#accueil" aria-label="TECHKEEP — retour à l’accueil">
+      <img src="assets/logo/techkeep-emblem.webp" alt="" width="515" height="650">
+      <span class="brand-name">TECHKEEP</span>
+    </a>
+
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Ouvrir le menu">
+      <svg class="icon i-open" aria-hidden="true"><use href="#i-menu"/></svg>
+      <svg class="icon i-close" aria-hidden="true"><use href="#i-x"/></svg>
+    </button>
+
+    <nav class="site-nav" id="site-nav" aria-label="Navigation principale">
+      <ul class="nav-list">
+        <li><a href="#accueil" data-nav="accueil">Accueil</a></li>
+        <li><a href="#a-propos" data-nav="a-propos">À propos</a></li>
+        <li><a href="#domaines" data-nav="domaines">Nos domaines d’activité</a></li>
+        <li><a href="#services" data-nav="services">Nos services</a></li>
+        <li><a href="#contact" data-nav="contact">Contact</a></li>
+        <li><a class="btn btn--primary btn--sm" href="#contact">Demander un devis</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main id="contenu">
+
+<!-- ============================== HERO ============================== -->
+<section class="hero" id="accueil" data-nav-section="accueil" aria-labelledby="hero-title">
+  <div class="container hero-grid">
+    <div class="hero-copy">
+      <h1 id="hero-title">Des solutions intelligentes pour connecter, sécuriser et développer vos activités.</h1>
+      <p class="hero-lead">TECHKEEP accompagne les particuliers, entreprises et organisations à travers des solutions technologiques, logistiques, commerciales et stratégiques adaptées à leurs besoins.</p>
+      <div class="hero-actions">
+        <a class="btn btn--light" href="#services">Découvrir nos services <svg class="icon" aria-hidden="true"><use href="#i-arrow-right"/></svg></a>
+        <a class="btn btn--ghost" href="#contact">Nous contacter</a>
+      </div>
+    </div>
+
+    <figure class="hero-figure">
+      <img src="assets/img/hero-technicien-toit-960.webp"
+           srcset="assets/img/hero-technicien-toit-640.webp 640w, assets/img/hero-technicien-toit-960.webp 960w"
+           sizes="(max-width: 900px) 80vw, 440px"
+           width="960" height="1280" fetchpriority="high" decoding="async"
+           alt="Technicien installant une antenne de connexion satellite au sommet d’un toit, photographie en noir et blanc">
+    </figure>
+  </div>
+
+  <div class="rail-wrap">
+    <div class="container">
+      <ol class="rail" aria-label="Nos cinq domaines d’activité">
+        <li><a href="#d-tech"><span class="node"><svg class="icon" aria-hidden="true"><use href="#i-cctv"/></svg></span><span class="rail-label">Technologies, réseaux<br>&amp; sécurité</span></a></li>
+        <li><a href="#d-marketing"><span class="node"><svg class="icon" aria-hidden="true"><use href="#i-megaphone"/></svg></span><span class="rail-label">Marketing, branding<br>&amp; événementiel</span></a></li>
+        <li><a href="#d-transport"><span class="node"><svg class="icon" aria-hidden="true"><use href="#i-truck"/></svg></span><span class="rail-label">Transports, logistique<br>&amp; supply chain</span></a></li>
+        <li><a href="#d-commerce"><span class="node"><svg class="icon" aria-hidden="true"><use href="#i-store"/></svg></span><span class="rail-label">Commerce, import-export<br>&amp; BTP</span></a></li>
+        <li><a href="#d-conseil"><span class="node"><svg class="icon" aria-hidden="true"><use href="#i-graduation-cap"/></svg></span><span class="rail-label">Conseil, formation<br>&amp; langues</span></a></li>
+      </ol>
+    </div>
+  </div>
+</section>
+
+<!-- ========================== PRÉSENTATION ========================== -->
+<section class="section about" id="a-propos" data-nav-section="a-propos" aria-labelledby="about-title">
+  <div class="container about-grid">
+    <div class="about-copy reveal">
+      <h2 id="about-title">Un partenaire, plusieurs métiers, un même accompagnement.</h2>
+      <p><strong>TECHKEEP est un partenaire multisectoriel</strong> : il réunit expertise technique, services opérationnels et accompagnement professionnel pour répondre à des besoins très différents.</p>
+      <p>De la sécurité électronique et des télécommunications au transport, au commerce, à la communication ou à la formation, une même entreprise peut prendre en charge des demandes qui, ailleurs, obligent à multiplier les interlocuteurs.</p>
+      <ul class="audiences" aria-label="Nos interlocuteurs">
+        <li>Particuliers</li>
+        <li>Entreprises</li>
+        <li>Organisations</li>
+      </ul>
+    </div>
+    <div class="about-logo reveal">
+      <img src="assets/logo/techkeep-logo.webp" alt="Logo TECHKEEP : un profil casqué dont les idées se connectent à cinq pastilles — ampoule, téléphone, écran, globe et personne" width="590" height="855" loading="lazy" decoding="async">
+    </div>
+  </div>
+</section>
+
+<!-- ======================= DOMAINES D'ACTIVITÉ ====================== -->
+<section class="section" id="domaines" data-nav-section="domaines" aria-labelledby="domaines-title">
+  <div class="container">
+    <div class="section-head reveal">
+      <h2 id="domaines-title">Nos domaines d’activité</h2>
+      <p>Cinq domaines complémentaires, pour les besoins techniques, commerciaux, logistiques et stratégiques des particuliers, des entreprises et des organisations.</p>
+    </div>
+
+    <div class="domains-list" id="domains-list">
+
+      <article class="domain" id="d-tech">
+        <div class="domain-node"><svg class="icon" aria-hidden="true"><use href="#i-cctv"/></svg></div>
+        <div class="domain-body">
+          <div class="domain-main">
+            <h3>Technologies, Télécommunications, Réseaux &amp; Sécurité</h3>
+            <p>Sécurité électronique, matériels informatiques et de télécommunication, services informatiques et développement de solutions technologiques.</p>
+            <button class="more-btn" type="button" aria-expanded="false" aria-controls="more-tech">En savoir plus <svg class="icon" aria-hidden="true"><use href="#i-plus"/></svg></button>
+          </div>
+          <ul class="domain-list">
+            <li>Installation de systèmes de vidéosurveillance et de sécurité électronique</li>
+            <li>Vente de matériels informatiques et de télécommunication</li>
+            <li>Installation et maintenance de solutions technologiques</li>
+            <li>Développement de solutions informatiques</li>
+          </ul>
+          <div class="domain-more" id="more-tech">
+            <div><div class="domain-more-inner">
+              <p>La sécurité électronique ; la vente de matériels informatiques et de télécommunication ; l’exploitation de services informatiques et bureautiques ; le développement de solutions technologiques ; le support informatique personnalisé, l’assistance technique sur mesure et la maintenance adaptée aux particuliers, entreprises et organisations.</p>
+              <a class="text-link" href="#contact" data-domain="tech">Demander un devis pour ce domaine <svg class="icon" aria-hidden="true"><use href="#i-arrow-right"/></svg></a>
+            </div></div>
+          </div>
+        </div>
+      </article>
+
+      <article class="domain" id="d-marketing">
+        <div class="domain-node"><svg class="icon" aria-hidden="true"><use href="#i-megaphone"/></svg></div>
+        <div class="domain-body">
+          <div class="domain-main">
+            <h3>Marketing, Branding, Communication &amp; Événementiel</h3>
+            <p>Création et gestion d’identité de marque, marketing digital, communication et organisation d’événements.</p>
+            <button class="more-btn" type="button" aria-expanded="false" aria-controls="more-marketing">En savoir plus <svg class="icon" aria-hidden="true"><use href="#i-plus"/></svg></button>
+          </div>
+          <ul class="domain-list">
+            <li>Branding : création et gestion d’identité de marque</li>
+            <li>Marketing digital et communication</li>
+            <li>Organisation événementielle</li>
+            <li>Appui à la communication des entreprises, personnes et organisations</li>
+          </ul>
+          <div class="domain-more" id="more-marketing">
+            <div><div class="domain-more-inner">
+              <p>Le branding, la création et la gestion d’identité de marque ; le marketing digital, la communication et l’événementiel ; l’appui à la communication des entreprises, personnes et organisations ; le développement d’un magazine ; l’exploitation de laboratoires photo et la vente de matériels photographiques et accessoires.</p>
+              <a class="text-link" href="#contact" data-domain="marketing">Demander un devis pour ce domaine <svg class="icon" aria-hidden="true"><use href="#i-arrow-right"/></svg></a>
+            </div></div>
+          </div>
+        </div>
+      </article>
+
+      <article class="domain" id="d-transport">
+        <div class="domain-node"><svg class="icon" aria-hidden="true"><use href="#i-truck"/></svg></div>
+        <div class="domain-body">
+          <div class="domain-main">
+            <h3>Transports, Logistique &amp; Supply Chain</h3>
+            <p>Transport de colis et de marchandises, logistique, supply chain et prestations de sous-traitance.</p>
+            <button class="more-btn" type="button" aria-expanded="false" aria-controls="more-transport">En savoir plus <svg class="icon" aria-hidden="true"><use href="#i-plus"/></svg></button>
+          </div>
+          <ul class="domain-list">
+            <li>Transport de paquets, colis et marchandises</li>
+            <li>Transport terrestre, fluvial et aérien de personnes et de biens</li>
+            <li>Logistique, supply chain et sous-traitance</li>
+            <li>Vente et location de véhicules et d’engins</li>
+          </ul>
+          <div class="domain-more" id="more-transport">
+            <div><div class="domain-more-inner">
+              <p>L’exploitation du transport de paquets et de colis ; l’exploitation du transport terrestre, fluvial et aérien des personnes et des biens ; le transport, la logistique, la supply chain et la sous-traitance ; la vente et la location de véhicules et d’engins.</p>
+              <a class="text-link" href="#contact" data-domain="transport">Demander un devis pour ce domaine <svg class="icon" aria-hidden="true"><use href="#i-arrow-right"/></svg></a>
+            </div></div>
+          </div>
+        </div>
+      </article>
+
+      <article class="domain" id="d-commerce">
+        <div class="domain-node"><svg class="icon" aria-hidden="true"><use href="#i-store"/></svg></div>
+        <div class="domain-body">
+          <div class="domain-main">
+            <h3>Commerce Général, Import-Export &amp; BTP</h3>
+            <p>Importation, exportation, distribution, achat et vente de produits, et commerce de matériaux de construction.</p>
+            <button class="more-btn" type="button" aria-expanded="false" aria-controls="more-commerce">En savoir plus <svg class="icon" aria-hidden="true"><use href="#i-plus"/></svg></button>
+          </div>
+          <ul class="domain-list">
+            <li>Importation, exportation et distribution</li>
+            <li>Achat et vente de tous produits</li>
+            <li>Matériaux et accessoires de construction</li>
+            <li>Produits cosmétiques</li>
+          </ul>
+          <div class="domain-more" id="more-commerce">
+            <div><div class="domain-more-inner">
+              <p>Le commerce général, l’importation et l’exportation, la distribution, l’achat et la vente de tous produits ; le commerce des matériaux et accessoires de construction ; la vente de produits cosmétiques.</p>
+              <a class="text-link" href="#contact" data-domain="commerce">Demander un devis pour ce domaine <svg class="icon" aria-hidden="true"><use href="#i-arrow-right"/></svg></a>
+            </div></div>
+          </div>
+        </div>
+      </article>
+
+      <article class="domain" id="d-conseil">
+        <div class="domain-node"><svg class="icon" aria-hidden="true"><use href="#i-graduation-cap"/></svg></div>
+        <div class="domain-body">
+          <div class="domain-main">
+            <h3>Conseil, Formation &amp; Services Linguistiques</h3>
+            <p>Consultance, conseil et formation pour les entreprises, traduction et interprétariat.</p>
+            <button class="more-btn" type="button" aria-expanded="false" aria-controls="more-conseil">En savoir plus <svg class="icon" aria-hidden="true"><use href="#i-plus"/></svg></button>
+          </div>
+          <ul class="domain-list">
+            <li>Consultance et conseil pour les entreprises</li>
+            <li>Formation des entreprises</li>
+            <li>Traduction</li>
+            <li>Interprétariat</li>
+          </ul>
+          <div class="domain-more" id="more-conseil">
+            <div><div class="domain-more-inner">
+              <p>La consultance, le conseil et la formation des entreprises ; la prestation de service et la sous-traitance ; la traduction ; l’interprétariat.</p>
+              <a class="text-link" href="#contact" data-domain="conseil">Demander un devis pour ce domaine <svg class="icon" aria-hidden="true"><use href="#i-arrow-right"/></svg></a>
+            </div></div>
+          </div>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============ NOS SERVICES : technologies, sécurité, connectivité ============ -->
+<section class="section services on-dark" id="services" data-nav-section="services" aria-labelledby="services-title">
+  <div class="container">
+    <div class="section-head reveal">
+      <h2 id="services-title">Nos services</h2>
+      <p>Sécurité électronique, télécommunications et matériels : le détail de nos prestations techniques.</p>
+    </div>
+
+    <!-- Sécurité électronique -->
+    <div class="band reveal">
+      <div class="band-copy">
+        <h3>Sécurité électronique et vidéosurveillance</h3>
+        <p>Installation de systèmes de vidéosurveillance et de sécurité électronique, pour les particuliers, les entreprises et les organisations.</p>
+        <ul class="band-list">
+          <li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg>Systèmes de vidéosurveillance</li>
+          <li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg>Sécurité électronique</li>
+          <li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg>Installation et maintenance de solutions technologiques</li>
+          <li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg>Assistance technique sur mesure</li>
+        </ul>
+        <a class="text-link" href="#contact" data-domain="tech">Demander un devis <svg class="icon" aria-hidden="true"><use href="#i-arrow-right"/></svg></a>
+      </div>
+      <div class="mosaic">
+        <figure class="shot"><img src="assets/img/camera-pose-perceuse-960.webp" srcset="assets/img/camera-pose-perceuse-640.webp 640w, assets/img/camera-pose-perceuse-960.webp 960w" sizes="(max-width: 860px) 60vw, 340px" width="960" height="1280" loading="lazy" decoding="async" alt="Fixation d’une caméra de surveillance sur un montant en bois à l’aide d’une perceuse-visseuse, image en noir et blanc"></figure>
+        <figure class="shot"><img src="assets/img/camera-hall-960.webp" srcset="assets/img/camera-hall-640.webp 640w, assets/img/camera-hall-960.webp 960w" sizes="(max-width: 860px) 45vw, 300px" width="960" height="1280" loading="lazy" decoding="async" alt="Caméra de surveillance au premier plan dans une grande salle sous tente, des personnes en arrière-plan"></figure>
+        <figure class="shot"><img src="assets/img/camera-dome-nuit-960.webp" srcset="assets/img/camera-dome-nuit-640.webp 640w, assets/img/camera-dome-nuit-960.webp 960w" sizes="(max-width: 860px) 45vw, 300px" width="960" height="1280" loading="lazy" decoding="async" alt="Caméra de surveillance motorisée de type dôme, éclairée dans la pénombre, un tournevis à la main"></figure>
+      </div>
+    </div>
+
+    <!-- Télécommunications -->
+    <div class="band band--flip reveal">
+      <div class="band-copy">
+        <h3>Télécommunications et connectivité</h3>
+        <p>Matériels de télécommunication, installation et maintenance de solutions de connectivité, en intérieur comme en extérieur.</p>
+        <ul class="band-list">
+          <li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg>Équipements de télécommunication et de réseau</li>
+          <li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg>Installations extérieures et raccordements</li>
+          <li><svg class="icon" aria-hidden="true"><use href="#i-check"/></svg>Support informatique et maintenance</li>
+        </ul>
+        <a class="text-link" href="#contact" data-domain="tech">Demander un devis <svg class="icon" aria-hidden="true"><use href="#i-arrow-right"/></svg></a>
+      </div>
+      <div class="pair">
+        <figure class="shot"><img src="assets/img/antenne-toit-960.webp" srcset="assets/img/antenne-toit-640.webp 640w, assets/img/antenne-toit-960.webp 960w" sizes="(max-width: 860px) 45vw, 280px" width="960" height="1280" loading="lazy" decoding="async" alt="Antenne plane posée sur un toit en tôle, vue en plongée sur une cour et des habitations"></figure>
+        <figure class="shot"><img src="assets/img/antenne-cablage-810.webp" srcset="assets/img/antenne-cablage-640.webp 640w, assets/img/antenne-cablage-810.webp 810w" sizes="(max-width: 860px) 45vw, 280px" width="810" height="1024" loading="lazy" decoding="async" alt="Raccordement de câbles sur un équipement de télécommunication extérieur muni d’antennes"></figure>
+      </div>
+    </div>
+
+    <!-- Matériels -->
+    <div class="band reveal">
+      <div class="band-copy">
+        <h3>Matériels informatiques et de télécommunication</h3>
+        <p>Vente de matériels informatiques et de télécommunication : câblage réseau, téléphonie et équipements associés.</p>
+        <a class="text-link" href="#contact" data-domain="tech">Demander un devis <svg class="icon" aria-hidden="true"><use href="#i-arrow-right"/></svg></a>
+      </div>
+      <div class="single">
+        <figure class="shot"><img src="assets/img/cablage-telephonie-960.webp" srcset="assets/img/cablage-telephonie-640.webp 640w, assets/img/cablage-telephonie-960.webp 960w" sizes="(max-width: 860px) 90vw, 430px" width="960" height="1000" loading="lazy" decoding="async" alt="Bobine de câble réseau, standard téléphonique et téléphone fixe dans leurs emballages"></figure>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ======================== POURQUOI TECHKEEP ======================== -->
+<section class="section" id="pourquoi" data-nav-section="a-propos" aria-labelledby="why-title">
+  <div class="container why-grid">
+    <div class="section-head reveal">
+      <h2 id="why-title">Pourquoi choisir TECHKEEP&nbsp;?</h2>
+      <p>Cinq raisons de confier vos besoins à un seul partenaire.</p>
+    </div>
+    <ul class="why-list">
+      <li class="reveal">
+        <div><h3>Une approche multisectorielle</h3><p>Technologies, communication, logistique, commerce et conseil : un seul interlocuteur pour des besoins qui touchent souvent plusieurs métiers à la fois.</p></div>
+      </li>
+      <li class="reveal">
+        <div><h3>Des solutions adaptées à vos besoins</h3><p>Chaque demande est étudiée pour elle-même, sans plaquer une offre standard sur votre situation.</p></div>
+      </li>
+      <li class="reveal">
+        <div><h3>Un accompagnement personnalisé</h3><p>Particulier, entreprise ou organisation : vous échangez avec une équipe qui s’intéresse à votre contexte et à vos contraintes.</p></div>
+      </li>
+      <li class="reveal">
+        <div><h3>Une diversité de compétences</h3><p>Des compétences techniques, opérationnelles et stratégiques réunies, de l’installation d’équipements au conseil et à la formation.</p></div>
+      </li>
+      <li class="reveal">
+        <div><h3>Une orientation vers des solutions concrètes</h3><p>L’objectif reste le même : une prestation utile, mise en œuvre et suivie, qui répond à ce que vous avez à accomplir.</p></div>
+      </li>
+    </ul>
+  </div>
+</section>
+
+<!-- ========================== NOTRE APPROCHE ========================= -->
+<section class="section approach" id="approche" data-nav-section="a-propos" aria-labelledby="approach-title">
+  <div class="container">
+    <div class="section-head reveal">
+      <h2 id="approach-title">Notre approche</h2>
+      <p>Un accompagnement simple, en quatre étapes.</p>
+    </div>
+    <ol class="steps">
+      <li class="step reveal"><span class="step-num" aria-hidden="true">1</span><h3>Comprendre votre besoin</h3><p>Nous écoutons votre demande, votre contexte et vos contraintes.</p></li>
+      <li class="step reveal"><span class="step-num" aria-hidden="true">2</span><h3>Étudier la solution appropriée</h3><p>Nous analysons les options et retenons celle qui convient à votre situation.</p></li>
+      <li class="step reveal"><span class="step-num" aria-hidden="true">3</span><h3>Proposer une intervention adaptée</h3><p>Nous vous présentons une proposition claire, ajustée à votre besoin.</p></li>
+      <li class="step reveal"><span class="step-num" aria-hidden="true">4</span><h3>Assurer le suivi de la prestation</h3><p>Nous restons disponibles après l’intervention pour accompagner la suite.</p></li>
+    </ol>
+  </div>
+</section>
+
+<!-- ========================= APPEL À L'ACTION ======================== -->
+<section class="cta" id="cta" data-nav-section="contact" aria-labelledby="cta-title">
+  <span class="cta-ring" aria-hidden="true"></span>
+  <div class="container cta-inner">
+    <div>
+      <h2 id="cta-title">Un projet à réaliser&nbsp;? Parlons-en.</h2>
+      <p>Décrivez-nous votre besoin. Nous étudions votre demande et revenons vers vous avec une proposition adaptée.</p>
+    </div>
+    <div class="cta-actions">
+      <a class="btn btn--light" href="#contact">Demander un devis <svg class="icon" aria-hidden="true"><use href="#i-arrow-right"/></svg></a>
+    </div>
+  </div>
+</section>
+
+<!-- ============================== CONTACT ============================ -->
+<section class="section contact" id="contact" data-nav-section="contact" aria-labelledby="contact-title">
+  <div class="container contact-grid">
+    <div class="contact-info">
+      <div class="section-head reveal">
+        <h2 id="contact-title">Contactez-nous</h2>
+        <p>Parlez-nous de votre projet : nous vous répondrons pour définir ensemble la solution la plus adaptée.</p>
+      </div>
+      <ul class="coords">
+        <li class="coord" data-coord="email"><span class="coord-ico"><svg class="icon" aria-hidden="true"><use href="#i-mail"/></svg></span><div><span class="coord-label">E-mail</span><span class="coord-value">À renseigner</span></div></li>
+        <li class="coord" data-coord="phone"><span class="coord-ico"><svg class="icon" aria-hidden="true"><use href="#i-phone"/></svg></span><div><span class="coord-label">Téléphone</span><span class="coord-value">À renseigner</span></div></li>
+        <li class="coord" data-coord="whatsapp" hidden><span class="coord-ico"><svg class="icon" aria-hidden="true"><use href="#i-message-circle"/></svg></span><div><span class="coord-label">WhatsApp</span><span class="coord-value"></span></div></li>
+        <li class="coord" data-coord="address"><span class="coord-ico"><svg class="icon" aria-hidden="true"><use href="#i-map-pin"/></svg></span><div><span class="coord-label">Adresse</span><span class="coord-value">À renseigner</span></div></li>
+        <li class="coord" data-coord="hours" hidden><span class="coord-ico"><svg class="icon" aria-hidden="true"><use href="#i-clock"/></svg></span><div><span class="coord-label">Horaires</span><span class="coord-value"></span></div></li>
+      </ul>
+    </div>
+
+    <div class="form-panel reveal">
+      <h3>Décrivez votre besoin</h3>
+      <p class="form-intro">Les champs marqués d’un <span aria-hidden="true">*</span><span class="sr-only">astérisque</span> sont obligatoires.</p>
+
+      <form id="contact-form" novalidate>
+        <div class="form-grid">
+          <div class="field field--full">
+            <label for="f-nom">Nom complet <span class="req" aria-hidden="true">*</span></label>
+            <input id="f-nom" name="nom" type="text" autocomplete="name" required aria-describedby="e-nom">
+            <span class="field-error" id="e-nom" role="alert"></span>
+          </div>
+          <div class="field">
+            <label for="f-email">Adresse e-mail <span class="req" aria-hidden="true">*</span></label>
+            <input id="f-email" name="email" type="email" autocomplete="email" inputmode="email" required aria-describedby="e-email">
+            <span class="field-error" id="e-email" role="alert"></span>
+          </div>
+          <div class="field">
+            <label for="f-tel">Téléphone</label>
+            <input id="f-tel" name="telephone" type="tel" autocomplete="tel" inputmode="tel" aria-describedby="e-tel">
+            <span class="field-error" id="e-tel" role="alert"></span>
+          </div>
+          <div class="field field--full">
+            <label for="f-domaine">Domaine concerné <span class="req" aria-hidden="true">*</span></label>
+            <select id="f-domaine" name="domaine" required aria-describedby="e-domaine">
+              <option value="">Choisir un domaine</option>
+              <option value="tech">Technologies, Télécommunications, Réseaux &amp; Sécurité</option>
+              <option value="marketing">Marketing, Branding, Communication &amp; Événementiel</option>
+              <option value="transport">Transports, Logistique &amp; Supply Chain</option>
+              <option value="commerce">Commerce Général, Import-Export &amp; BTP</option>
+              <option value="conseil">Conseil, Formation &amp; Services Linguistiques</option>
+              <option value="autre">Autre demande / plusieurs domaines</option>
+            </select>
+            <span class="field-error" id="e-domaine" role="alert"></span>
+          </div>
+          <div class="field field--full">
+            <label for="f-besoin">Description du besoin <span class="req" aria-hidden="true">*</span></label>
+            <textarea id="f-besoin" name="besoin" required aria-describedby="e-besoin"></textarea>
+            <span class="field-error" id="e-besoin" role="alert"></span>
+          </div>
+          <div class="hp" aria-hidden="true"><label>Ne pas remplir <input type="text" name="site_web" tabindex="-1" autocomplete="off"></label></div>
+        </div>
+
+        <div class="form-foot">
+          <button class="btn btn--primary" type="submit" id="form-submit">Envoyer ma demande <svg class="icon" aria-hidden="true"><use href="#i-send"/></svg></button>
+        </div>
+        <div class="form-status" id="form-status" role="status" aria-live="polite"></div>
+      </form>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ============================ PIED DE PAGE ========================== -->
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <img src="assets/logo/techkeep-logo.webp" alt="TECHKEEP" width="590" height="855" loading="lazy" decoding="async">
+        <p>Partenaire multisectoriel : technologies, communication, logistique, commerce et conseil pour les particuliers, entreprises et organisations.</p>
+      </div>
+      <nav class="footer-col" aria-label="Pied de page : navigation">
+        <h2>Navigation</h2>
+        <ul>
+          <li><a href="#accueil">Accueil</a></li>
+          <li><a href="#a-propos">À propos</a></li>
+          <li><a href="#domaines">Nos domaines d’activité</a></li>
+          <li><a href="#services">Nos services</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <nav class="footer-col" aria-label="Pied de page : domaines d’activité">
+        <h2>Domaines d’activité</h2>
+        <ul>
+          <li><a href="#d-tech">Technologies &amp; sécurité</a></li>
+          <li><a href="#d-marketing">Marketing &amp; communication</a></li>
+          <li><a href="#d-transport">Transports &amp; logistique</a></li>
+          <li><a href="#d-commerce">Commerce, import-export &amp; BTP</a></li>
+          <li><a href="#d-conseil">Conseil &amp; formation</a></li>
+        </ul>
+      </nav>
+      <div class="footer-col">
+        <h2>Coordonnées</h2>
+        <ul id="footer-coords">
+          <li data-foot="email"><span class="is-missing-text">E-mail à renseigner</span></li>
+          <li data-foot="phone"><span class="is-missing-text">Téléphone à renseigner</span></li>
+          <li data-foot="address"><span class="is-missing-text">Adresse à renseigner</span></li>
+        </ul>
+        <div class="socials" id="footer-socials" aria-label="Réseaux sociaux"></div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© <span data-year>2026</span> TECHKEEP. Tous droits réservés.</span>
+      <a href="#top">Retour en haut</a>
+    </div>
+  </div>
+</footer>
+
+<script src="js/config.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
